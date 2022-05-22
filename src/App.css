@@ -1,38 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap");
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  min-height: 100vh;
+  background-color: #9f6200;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1.header-title {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  font-family: Montserrat;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  height: 60vh;
+}
+
+.generate-qrcode {
+  border-right: 2px solid #ffffff;
+}
+
+.decode-scan-qrcode {
+  border-right: 2px solid #ffffff;
+  min-width: 250px;
+}
+
+button.btn {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+  background: cadetblue;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+button.btn:focus {
+  outline: 0;
+}
+
+input.generate-input {
+  padding: 5px;
+  letter-spacing: 0.6px;
+  width: 200px;
+  font-size: 15px;
+}
+
+input.generate-input:focus {
+  outline: 0;
+}
+
+.qrcode img.qrcode-image {
+  position: relative;
+  top: 50px;
+  width: 250px;
+  height: 250px;
+}
+
+.decode-btn {
+  margin-left: 10px;
+  padding: 5px 10px;
+  font-size: 16px;
+  background: cadetblue;
+  border: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+  margin-right: 10px;
+}
+
+.decode-btn:focus {
+  outline: 0;
+}
+
+.scan-qrcode-by-cam h3 {
+  margin: 0 10px;
+  font-family: Montserrat;
 }
